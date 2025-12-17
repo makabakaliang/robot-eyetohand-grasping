@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# Runtime files
+logs/
+*.log
+*.err
+*.temp
+ystemctl --user enable robot-gui.service
+
+# Local calibration/runtime outputs
+apriltag_poses.txt
+robot_base_poses.txt
+base_pose.txt
+T_base_cam.npy
+
+# Large or external dependencies
+weights/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.deb
+torchvision_src/
+
+# Datasets and generated visual outputs
+dataset/
+runs/**/weights/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.cache
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
