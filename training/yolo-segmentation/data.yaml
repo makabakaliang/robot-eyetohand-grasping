@@ -1,0 +1,9 @@
+# 自动生成的数据集配置
+# 适用于 Ultralytics YOLO segmentation
+
+path: .
+train: dataset/train/images
+val: dataset/val/images
+
+nc: 1
+names: ['disk']
