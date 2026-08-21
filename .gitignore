@@ -50,3 +50,6 @@ runs/**/weights/
 # OS
 .DS_Store
 Thumbs.db
+
+# Old git history backup
+.git_backup*/

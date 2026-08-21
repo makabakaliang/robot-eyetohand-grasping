@@ -1,0 +1,24 @@
+[0;1;34m# /home/nvidia/.config/systemd/user/robot-gui.service[0m
+[Unit]
+Description=Robot Vision GUI (PyQt5)
+After=graphical-session.target network-online.target
+Wants=graphical-session.target network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/nvidia/PyCharmMiscProject/robot_version
+ExecStart=/home/nvidia/PyCharmMiscProject/robot_version/.venv/bin/python3 /home/nvidia/PyCharmMiscProject/robot_version/gui_app.py
+
+Restart=on-failure
+RestartSec=2
+
+Environment=QT_QPA_PLATFORM=xcb
+Environment=PYTHONUNBUFFERED=1
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=%h/.Xauthority
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
