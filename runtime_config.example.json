@@ -1,0 +1,8 @@
+{
+  "_comment": "Copy to runtime_config.json and adjust for your setup.",
+  "manual_comp": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+  "tool_comp_enabled": true,
+  "tool_offset_xyz": [0.0, 0.0, 262.0],
+  "soft_limit_enabled": false,
+  "z_min_limit": 381.0
+}
